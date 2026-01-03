@@ -493,3 +493,11 @@ pytest:
 .PHONY: format-and-pytest
 format-and-pytest:
 	RUNTIME=docker ./util/docker_cmd.sh bash -lic "$(CONTAINER_PREAMBLE); qmk format-c --core-only -a && qmk format-python -a && qmk pytest"
+
+.PHONY: generate-keymap-json
+generate-keymap-json:
+	qmk c2json -o /Users/wchoi/src/qmk_firmware/keyboards/boardsource/lulu/keymaps/wilsonkichoi/keymap.json /Users/wchoi/src/qmk_firmware/keyboards/boardsource/lulu/keymaps/wilsonkichoi/keymap.c
+
+.PHONY: build-firmware
+build-firmware:
+	qmk compile
