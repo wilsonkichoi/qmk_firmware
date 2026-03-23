@@ -69,6 +69,13 @@ tap_dance_action_t tap_dance_actions[] = {
     [TD_SHIFT_LAYER] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_shift_layer_finished, td_shift_layer_reset),
 };
 
+// Combo definitions
+const uint16_t PROGMEM bn_combo[] = {KC_B, KC_N, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(bn_combo, TG(4)),
+};
+
 // Caps Word customization
 bool caps_word_press_user(uint16_t keycode) {
     switch (keycode) {
