@@ -182,7 +182,7 @@ bool caps_word_press_user(uint16_t keycode) {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |Gui [ |MWhlL |MWhlDn|MWhlR |CtlEnt|-------.    ,-------|Sft H |Sft J |Sft K |Sft L |  :   |  "   |
  * |------+------+------+------+------+------|SftEnt |    |       |------+------+------+------+------+------|
- * |LSG 4 |      | Mute | Vol- | Vol+ |Gui M |-------|    |-------|Sft N |Sft M |  <   |  >   |  ?   |SftEnt|
+ * |LSG 4 |LCS({)| Mute | Vol- | Vol+ |Gui M |-------|    |-------|Sft N |Sft M |  <   |  >   |  ?   |SftEnt|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \ MO(3)\  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -192,7 +192,7 @@ bool caps_word_press_user(uint16_t keycode) {
         LCG(KC_Q),     KC_F1,          KC_F2,         KC_F3,    KC_F4,         KC_F5,                                       KC_F6,       KC_F7,       KC_F8,       KC_F9,       KC_F10,      KC_F11,
         LSFT(KC_TAB),  KC_TRNS,        LSG(KC_LBRC),  MS_WHLU,  LSG(KC_RBRC),  LSG(KC_T),                                   LSFT(KC_Y),  LSFT(KC_U),  LSFT(KC_I),  LSFT(KC_O),  LSFT(KC_P),  KC_F12,
         KC_TRNS,       LGUI(KC_LBRC),  MS_WHLL,       MS_WHLD,  MS_WHLR,       LCTL(KC_ENT),                                LSFT(KC_H),  LSFT(KC_J),  LSFT(KC_K),  LSFT(KC_L),  KC_COLN,     KC_DQUO,
-        LSG(KC_4),     KC_TRNS,        KC_MUTE,       KC_VOLD,  KC_VOLU,       LGUI(KC_M),   LSFT(KC_ENT),        KC_TRNS,  LSFT(KC_N),  LSFT(KC_M),  KC_LT,       KC_GT,       KC_QUES,     LSFT(KC_ENT),
+        LSG(KC_4),     LCS(KC_LCBR),        KC_MUTE,       KC_VOLD,  KC_VOLU,       LGUI(KC_M),   LSFT(KC_ENT),        KC_TRNS,  LSFT(KC_N),  LSFT(KC_M),  KC_LT,       KC_GT,       KC_QUES,     LSFT(KC_ENT),
                                                             KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,                         MO(3),  KC_TRNS,  KC_TRNS,  KC_TRNS
     ),
 
